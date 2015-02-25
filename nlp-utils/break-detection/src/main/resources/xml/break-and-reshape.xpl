@@ -84,12 +84,6 @@
   </p:option>
   <p:option name="ensure-sentence-after" required="false" select="''"/>
 
-  <p:option name="split-skippable" required="false" select="'false'">
-    <p:documentation>
-      Deprecated
-    </p:documentation>
-  </p:option>
-
   <p:option name="id-prefix" required="false" select="''">
     <p:documentation>
       Generated IDs will be prefixed with this option so as to prevent
@@ -99,11 +93,6 @@
     </p:documentation>
   </p:option>
 
-  <p:option name="skippable-tags" required="false" select="''">
-    <p:documentation>
-      Deprecated
-    </p:documentation>
-  </p:option>
   <p:option name="output-subsentence-tag" required="true"/>
   <p:option name="exclusive-word-tag" select="'true'"/>
   <p:option name="exclusive-sentence-tag" select="'true'"/>
