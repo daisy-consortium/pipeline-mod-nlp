@@ -77,6 +77,11 @@
         <artifactId>maven-bundle-plugin</artifactId>
         <configuration>
           <instructions>
+            <!-- must match version from framework-bom -->
+            <Import-Package>
+              net.sf.saxon.*;version="[9.5.1,9.5.2)",
+              *
+            </Import-Package>
             <Export-Package />
             <Service-Component>OSGI-INF/break-detect.xml</Service-Component>
           </instructions>
