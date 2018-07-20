@@ -51,6 +51,24 @@
   </dependencyManagement>
 
   <build>
+    <plugins>
+      <plugin>
+        <groupId>org.daisy.pipeline.build</groupId>
+        <artifactId>ds-to-spi-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>generate-spi-classes</id>
+            <phase>process-sources</phase>
+            <goals>
+              <goal>generate-spi-classes</goal>
+            </goals>
+            <configuration>
+              <includes>${expose-services}</includes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -59,6 +77,7 @@
           <configuration>
             <instructions>
               <_dsannotations>${expose-services}</_dsannotations>
+              <Import-Package>!org.daisy.common.spi,*</Import-Package>
             </instructions>
           </configuration>
         </plugin>
