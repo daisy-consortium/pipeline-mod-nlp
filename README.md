@@ -1,6 +1,8 @@
 DAISY Pipeline 2 :: NLP Modules
 ===============================
 
+**NOTE: This project is deprecated, its content have been integrated in the [pipeline-modules project](https://github.com/daisy/pipeline-modules)**
+
 [![Build Status](https://travis-ci.org/daisy/pipeline-mod-nlp.png?branch=master)](https://travis-ci.org/daisy/pipeline-mod-nlp)
 
 NLP-related modules for the DAISY Pipeline 2
